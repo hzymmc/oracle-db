@@ -1,0 +1,12 @@
+server:
+  port: 80
+
+spring:
+  datasource:
+    hikari:
+      jdbc-url: odfjsdofjds
+      driver-class-name: fdsfdsf
+      username: jdsfjsdif
+      password: dfjisojefis
+      minimum-idle: 3
+      maximum-pool-size: 10
