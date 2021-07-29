@@ -3,10 +3,16 @@ server:
 
 spring:
   datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:XE
+    username: MMC_DB
+    password: oracle_123456
+    type: com.zaxxer.hikari.HikariDataSource
     hikari:
-      jdbc-url: odfjsdofjds
-      driver-class-name: fdsfdsf
-      username: jdsfjsdif
-      password: dfjisojefis
       minimum-idle: 3
       maximum-pool-size: 10
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
