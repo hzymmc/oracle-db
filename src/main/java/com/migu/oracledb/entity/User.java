@@ -1,10 +1,12 @@
 package com.migu.oracledb.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 
 @TableName(value = "USER_INFO")
 public class User {
-    private int userId;
+    @TableId
+    private Integer userId;
     private String name;
     private int age;
     private String gender;
@@ -12,11 +14,11 @@ public class User {
     private String email;
     private String address;
 
-    public int getUserId() {
+    public Integer getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(Integer userId) {
         this.userId = userId;
     }
 

@@ -17,7 +17,6 @@ public class UserController {
 
     @RequestMapping("getList")
     public List<User> getList() {
-
         return userService.list();
     }
 }
